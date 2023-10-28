@@ -14,6 +14,7 @@ import { openSource, showContactUs } from '../portfolio';
 import SEO from '../components/SEO';
 import Contact from '../components/ContactUs';
 import { GithubUserType } from '../types';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home({
   githubProfileData,
@@ -33,6 +34,7 @@ export default function Home({
       <Projects />
       {showContactUs ? <Contact /> : null}
       <GithubProfileCard {...githubProfileData} />
+      <Analytics />
     </div>
   );
 }

@@ -25,7 +25,7 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https://saratangajala.com/',
+  url: 'https://blogs.saratangajala.com/',
   linkedin: 'https://www.linkedin.com/in/saratangajala/',
   github: 'https://github.com/SaratAngajalaoffl',
   twitter: 'https://twitter.com/mugiwaraa_eth',
