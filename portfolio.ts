@@ -138,7 +138,7 @@ export const skillsSection: SkillsSectionType = {
   ],
 };
 
-export const SkillBars = null;
+export const SkillBars: any = null;
 
 export const educationInfo: EducationType[] = [
   {
