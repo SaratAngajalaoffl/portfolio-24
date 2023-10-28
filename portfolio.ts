@@ -6,7 +6,6 @@ import {
   GreetingsType,
   ProjectType,
   SEODataType,
-  SkillBarsType,
   SkillsSectionType,
   SocialLinksType,
 } from './types/sections';
@@ -139,7 +138,7 @@ export const skillsSection: SkillsSectionType = {
   ],
 };
 
-// export const SkillBars: SkillBarsType[] = [];
+export const SkillBars = null;
 
 export const educationInfo: EducationType[] = [
   {
