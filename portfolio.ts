@@ -3,51 +3,103 @@ import {
   EducationType,
   ExperienceType,
   FeedbackType,
-  ProjectType,
-  SkillsSectionType,
-  SkillBarsType,
-  SEODataType,
-  SocialLinksType,
   GreetingsType,
+  ProjectType,
+  SEODataType,
+  SkillBarsType,
+  SkillsSectionType,
+  SocialLinksType,
 } from './types/sections';
 
 export const greetings: GreetingsType = {
-  name: 'Hanzla Tauqeer',
-  title: "Hi all, I'm Hanzla",
+  name: 'Sarat Angajala',
+  title: "Hello, I'm Sarat",
   description:
-    "I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, Moralis, and Brownie Framework.",
-  resumeLink:
-    'https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing',
+    'Full-stack and blockchain engineer with 3 years experience building fintech and web3 products.',
+  resumeLink: 'https://saratangajala.com/Resume.pdf',
 };
 
 export const openSource = {
-  githubUserName: '1hanzla100',
+  githubUserName: 'SaratAngajalaoffl',
 };
 
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https://1hanzla100.github.io/',
-  linkedin: 'https://www.linkedin.com/in/1hanzla100/',
-  github: 'https://github.com/1hanzla100',
-  instagram: 'https://www.instagram.com/__hanzla100',
-  facebook: 'https://www.facebook.com/1hanzla100',
-  twitter: 'https://twitter.com/1hanzla100',
+  url: 'https://saratangajala.com/',
+  linkedin: 'https://www.linkedin.com/in/saratangajala/',
+  github: 'https://github.com/SaratAngajalaoffl',
+  twitter: 'https://twitter.com/mugiwaraa_eth',
+  telegram: 'https://t.me/mugiwaraa_eth',
 };
 
 export const skillsSection: SkillsSectionType = {
   title: 'What I do',
-  subTitle: 'CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK',
+  subTitle: 'Blockchain engineer building a decentralized future',
   data: [
+    {
+      title: 'Blockchain Development',
+      lottieAnimationFile: '/lottie/skills/ethereum.json', // Path of Lottie Animation JSON File
+      skills: [
+        emoji(
+          '⚡ Building complex wallet infrastructure using Account Abstraction (ERC-4337) and Token Bound Accounts (ERC-6551)'
+        ),
+        emoji(
+          '⚡ Experience of using Openzeppelin Smart Contract Standards & Chainlink Oracles'
+        ),
+        emoji(
+          '⚡ Developing tech for NFT projects using ERC-721 Token Standard and ensuring compatibility and gas efficiency.'
+        ),
+        emoji(
+          '⚡ Building DeFi applications that integrate with swapping, lending and other defi protocols.'
+        ),
+      ],
+      softwareSkills: [
+        {
+          skillName: 'Ethereum',
+          iconifyTag: 'logos:ethereum',
+        },
+        {
+          skillName: 'Polygon Matic',
+          iconifyTag: 'cryptocurrency-color:matic',
+        },
+        {
+          skillName: 'Solidity',
+          iconifyTag: 'logos:solidity',
+        },
+        {
+          skillName: 'Ethers',
+          iconifyTag: 'logos:ethers',
+        },
+        {
+          skillName: 'Hardhat',
+          iconifyTag: 'vscode-icons:file-type-hardhat',
+        },
+        {
+          skillName: 'Metamask',
+          iconifyTag: 'logos:metamask-icon',
+        },
+        {
+          skillName: 'Ganache',
+          iconifyTag: 'logos:ganache-icon',
+        },
+        {
+          skillName: 'OpenZeppelin',
+          iconifyTag: 'logos:open-zeppelin-icon',
+        },
+      ],
+    },
     {
       title: 'Full Stack Development',
       lottieAnimationFile: '/lottie/skills/fullstack.json', // Path of Lottie Animation JSON File
       skills: [
         emoji(
-          '⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'
+          '⚡ Building responsive and functional Single-Page-Apps (SPA) & PWA in ReactJS / NextJS'
         ),
-        emoji('⚡ Building responsive static websites using Next.js'),
-        emoji('⚡ Building RESTful APIs in Django & Django REST Framework'),
+        emoji('⚡ Building high performance backends using ExpressJS / Golang'),
+        emoji(
+          '⚡ Integrating web3 systems while ensuring security and decentralisation'
+        ),
       ],
       softwareSkills: [
         {
@@ -71,226 +123,95 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: 'vscode-icons:file-type-light-next',
         },
         {
-          skillName: 'Python',
-          iconifyTag: 'logos:python',
-        },
-        {
-          skillName: 'Django',
-          iconifyTag: 'vscode-icons:file-type-django',
-        },
-
-        {
           skillName: 'Redux',
           iconifyTag: 'logos:redux',
-        },
-        {
-          skillName: 'NPM',
-          iconifyTag: 'logos:npm-icon',
         },
         {
           skillName: 'Yarn',
           iconifyTag: 'logos:yarn',
         },
-      ],
-    },
-    {
-      title: 'Cloud Infra-Architecture',
-      lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
-      skills: [
-        emoji('⚡ Experience of working on multiple cloud platforms'),
-        emoji(
-          '⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases'
-        ),
-        emoji(
-          '⚡ Building CI/CD pipelines for automated testing & deployment using Github Actions'
-        ),
-      ],
-      softwareSkills: [
-        // ? Check README To get icon details
         {
-          skillName: 'AWS',
-          iconifyTag: 'logos:aws',
-        },
-        {
-          skillName: 'Azure',
-          iconifyTag: 'logos:microsoft-azure',
-        },
-        {
-          skillName: 'Heroku',
-          iconifyTag: 'logos:heroku-icon',
-        },
-        {
-          skillName: 'PostgreSQL',
-          iconifyTag: 'logos:postgresql',
-        },
-        {
-          skillName: 'Github',
-          iconifyTag: 'akar-icons:github-fill',
-        },
-        {
-          skillName: 'Docker',
-          iconifyTag: 'logos:docker-icon',
-        },
-        {
-          skillName: 'Github Actions',
-          iconifyTag: 'logos:github-actions',
-        },
-        {
-          skillName: 'Cloudinary',
-          iconifyTag: 'logos:cloudinary',
-        },
-        {
-          skillName: 'Nginx',
-          iconifyTag: 'logos:nginx',
-        },
-        {
-          skillName: 'Sentry',
-          iconifyTag: 'logos:sentry-icon',
-        },
-      ],
-    },
-    {
-      title: 'Blockchain',
-      lottieAnimationFile: '/lottie/skills/ethereum.json', // Path of Lottie Animation JSON File
-      skills: [
-        emoji(
-          '⚡ Experience in developing Smart Contract using Solidity & Ethereum'
-        ),
-        emoji(
-          '⚡ Building Scripts for automated testing & deployment of Smart Contracts using Brownie & Infura'
-        ),
-        emoji(
-          '⚡ Experience of using Openzeppelin Smart Contract Standards & Chainlink Oracles'
-        ),
-        emoji('⚡ Developing NFT Smart Contracts using ERC-721 Token Standard'),
-        emoji(
-          '⚡ Building Dapps with React.js & Solidity using Web3.js, Moralis & IPFS'
-        ),
-      ],
-      softwareSkills: [
-        {
-          skillName: 'Ethereum',
-          iconifyTag: 'logos:ethereum',
-        },
-        {
-          skillName: 'Solidity',
-          iconifyTag: 'logos:solidity',
-        },
-        {
-          skillName: 'Web3js',
-          iconifyTag: 'logos:web3js',
-        },
-        {
-          skillName: 'Metamask',
-          iconifyTag: 'logos:metamask-icon',
-        },
-        {
-          skillName: 'Ganache',
-          iconifyTag: 'logos:ganache-icon',
+          skillName: 'PNPM',
+          iconifyTag: 'logos:pnpm',
         },
       ],
     },
   ],
 };
 
-export const SkillBars: SkillBarsType[] = [
-  {
-    Stack: 'Frontend/Design', //Insert stack or technology you have experience in
-    progressPercentage: '90', //Insert relative proficiency in percentage
-  },
-  {
-    Stack: 'Backend',
-    progressPercentage: '70',
-  },
-  {
-    Stack: 'Programming',
-    progressPercentage: '60',
-  },
-];
+// export const SkillBars: SkillBarsType[] = [];
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: 'Harvard University',
-    subHeader: 'Master of Science in Computer Science',
-    duration: 'September 2017 - April 2019',
-    desc: 'Participated in the research of XXX and published 3 papers.',
-    grade: 'Grade A',
-    descBullets: [
-      'Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    ],
+    schoolName: 'Indian Institute of Information Technology',
+    subHeader: 'Bachelor of Technology in Computer Science',
+    duration: 'July 2018 - July 2022',
+    desc: '',
+    grade: '',
+    descBullets: [],
   },
 ];
 
 export const experience: ExperienceType[] = [
   {
-    role: 'Frontend Developer',
-    company: 'Duseca Software',
-    companyLogo: '/img/icons/common/dusecaSoftware.jpg',
-    date: 'Apr 2022 – Jun 2022',
-    desc: 'I worked as frontend web developer to design web based admin dashboards for mulitple apps using Django, Bootstrap, jQuery, Chart.js and some other libraries.',
+    role: 'FullStack / Blockchain Freelancer',
+    company: 'ClanX - Talent aggregator in India',
+    companyLogo: '/img/icons/common/clanx.jpeg',
+    date: 'May 2023 – Present',
+    desc: '',
+    descBullets: [
+      'Developed the tech required for an NFT art wall on polygon for Good Glamm Group.',
+      'Built a student portal for the education institutes part of the Somaiya Group.',
+      'Worked as a consultant/tech-support on a contract basis for Vanguard and Flexiti.',
+    ],
   },
   {
-    role: 'API Engineer',
-    company: 'Duseca Software',
-    companyLogo: '/img/icons/common/dusecaSoftware.jpg',
-    date: 'Jan 2022 – Mar 2022',
-    desc: 'I worked as API Engineer on a Kale App. Kale is a community platform for the creation of social reviews based on verified transactions. I built Fully Optimized and High Performance RESTful APIs using Django, DjangoRESTFramework, PostgresSQL, JWT Authentication, AWS, Integrated Plaid APIs for Fetching Bank Transactions, Integrated Sentry for monitoring Django Server and deployed the API on Heroku Server.',
-    // descBullets: [
-    // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-    // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    // ],
+    role: 'FullStack / Blockchain Engineer',
+    company: 'SenshoDAO - A web3 research firm',
+    companyLogo: '/img/icons/common/sensho.png',
+    date: 'Jan 2022 – May 2023',
+    desc: '',
+    descBullets: [
+      'Assisted media, entertainment and art houses looking to foray into Web3',
+      'Clients include large film conglomerates like Eros Media World, Misfit Productions, and the Government of Qatar.',
+      'Built a Web3 onboarding product called Augmint, which allowed users to mint NFTs with their credit card and no wallet.',
+    ],
   },
   {
-    role: 'Full Stack Developer',
-    company: 'Bleed-AI',
-    companyLogo: '/img/icons/common/bleedAI.jpg',
-    date: 'Sept 2021 - Oct 2021',
-    desc: 'Worked as django web developer to create a website in which I integrated computer vision AI model (built by the team of BleedAI) to process YouTube URLs and show Real Time processing on Website using Django Channels WebSockets , threading for running multiple instances of AI Model, jQuery for UI rendering and deployed it on Heroku server.',
-  },
-  {
-    role: 'Backend Developer',
-    company: 'Wapidu',
-    companyLogo: '/img/icons/common/wapidu.jpg',
-    date: 'Sept 2021',
-    desc: 'Worked as a Django Developer to integrate Stripe payment gateway in wapidu.com and Created REST APIs using Django REST Framework to integrate Django Stripe backend to Vue.js Frontend and Deployed it on Azure based Docker container registry.',
+    role: 'FullStack / Mobile Developer',
+    company: 'Haasyl',
+    companyLogo: '/img/icons/common/haasyl.png',
+    date: 'May 2021 - Jan 2022',
+    desc: '',
+    descBullets: [
+      'Built a react native app with 500+ downloads on PlayStore.',
+      'Designed and built a microloan platform that allows early salary access and disbursed over 20Lac in two months.',
+      'Integrated third party services like a payment gateway, eKYC, BBPS, and NBFC for loan registration.',
+      'Designed and built a scheduling system that handles automated notifications, repayment reminders, E-Nach initiations.',
+    ],
   },
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: 'developer-portfolio',
-    desc: 'Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.',
-    github: 'https://github.com/1hanzla100/developer-portfolio',
-    link: 'https://developer-portfolio-1hanzla100.vercel.app/',
+    name: 'Zaapbot',
+    desc: 'Zaapbot is a Peer to Peer prediction market designed to allow users to bet on anything, anywhere using the beating heart of crypto- TWITTER. It simplifies prediction markets without making any additional trust assumptions',
+    github: 'https://github.com//developer-portfolio',
+    link: 'https://ethglobal.com/showcase/zaapbot-keikp',
   },
   {
-    name: 'AtlasMart',
-    desc: 'With Atlas Mart, it’s easy to find the products with the best price and ship them straight to your door.',
-    github: 'https://github.com/1hanzla100/Django-React-Marketplace',
-  },
-  {
-    name: 'Technota (Forum)',
-    desc: 'Get hands-on experience in technical skills with Technota',
-    github: 'https://github.com/1hanzla100/django-react-forum',
-  },
-  {
-    name: 'Shopaza (Ecommerce)',
-    desc: 'Now your reach to all your favorite entertainment and luxury items is just one touch apart',
-    github: 'https://github.com/1hanzla100/Django-ecommerce',
+    name: 'Intgr',
+    desc: 'Telegram bot that uses Account Abstraction to provide a true Defi experience buying and selling NFTs via Telegram without any additional trust assumptions or loss of control over funds or NFTs.',
+    github: 'https://github.com/superhack-eu091/TiGr-Bot',
+    link: 'https://ethglobal.com/showcase/in-tgr-j0imz',
   },
 ];
 
 export const feedbacks: FeedbackType[] = [
   {
-    name: 'John Smith',
+    name: 'Abhishek - Founder @unmutex',
     feedback:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
-  },
-  {
-    name: 'John Smith',
-    feedback:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, vel illo. Eum magnam beatae ratione eos natus accusamus unde pariatur fugiat at facilis, modi molestiae? Labore odio sit eligendi. Tenetur.',
+      'Sarat was a fantastic freelancer to work with. He efficiently completed my website designs in FIGMA and exceeded my expectations. Highly recommend him for future projects.',
   },
 ];
 
@@ -299,19 +220,20 @@ export const showContactUs: boolean = true;
 
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: 'Hanzla Tauqeer',
+  title: 'Sarat Angajala',
   description:
-    'A passionate Full Stack Web Developer and Blockchain Developer.',
-  author: 'Hanzla Tauqeer',
-  image: 'https://avatars3.githubusercontent.com/u/59178380?v=4',
-  url: 'https://developer-portfolio-1hanzla100.vercel.app',
+    'Full-stack and blockchain engineer with 3 years experience building fintech and web3 products. Developed React Native app with 500+ downloads. Consulted for media companies on NFT projects. Contributor to open source protocols. Passionate about leveraging blockchain to provide financial access.',
+  author: 'Sarat Angajala',
+  image: '/avatar.png',
+  url: 'https://saratangajala.com',
   keywords: [
-    'Hanzla',
-    'Hanzla Tauqeer',
-    '@1hanzla100',
-    '1hanzla100',
-    'Portfolio',
-    'Hanzla Portfolio ',
-    'Hanzla Tauqeer Portfolio',
+    'Sarat',
+    'Sarat Angajala',
+    '@mugiwaraa_eth',
+    '@mugiwaraa.eth',
+    'mugiwaraa',
+    'Sarat Portfolio ',
+    'Blockchain Developer',
+    'NFT Developer',
   ],
 };
