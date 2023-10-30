@@ -180,7 +180,7 @@ export const experience: ExperienceType[] = [
     role: 'FullStack / Mobile Developer',
     company: 'Haasyl',
     companyLogo: '/img/icons/common/haasyl.png',
-    date: 'May 2021 - Jan 2022',
+    date: 'May 2020 - Jan 2022',
     desc: '',
     descBullets: [
       'Built a react native app with 500+ downloads on PlayStore.',
