@@ -156,6 +156,7 @@ export const experience: ExperienceType[] = [
     role: 'FullStack / Blockchain Freelancer',
     company: 'ClanX - Talent aggregator in India',
     companyLogo: '/img/icons/common/clanx.jpeg',
+    companyUrl: 'https://clanx.ai',
     date: 'May 2023 – Present',
     desc: '',
     descBullets: [
@@ -168,6 +169,7 @@ export const experience: ExperienceType[] = [
     role: 'FullStack / Blockchain Engineer',
     company: 'SenshoDAO - A web3 research firm',
     companyLogo: '/img/icons/common/sensho.png',
+    companyUrl: 'https://senshodao.xyz',
     date: 'Jan 2022 – May 2023',
     desc: '',
     descBullets: [
@@ -180,6 +182,7 @@ export const experience: ExperienceType[] = [
     role: 'FullStack / Mobile Developer',
     company: 'Haasyl',
     companyLogo: '/img/icons/common/haasyl.png',
+    companyUrl: 'https://play.google.com/store/apps/details?id=com.haasyl.app&hl=en_IN&gl=US&pli=1',
     date: 'May 2020 - Jan 2022',
     desc: '',
     descBullets: [

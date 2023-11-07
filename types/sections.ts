@@ -66,6 +66,7 @@ export type ExperienceType = {
   role: string;
   company: string;
   companyLogo: string;
+  companyUrl: string;
   date: string;
   desc: string;
   descBullets?: string[];

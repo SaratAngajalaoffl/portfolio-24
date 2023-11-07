@@ -1,17 +1,18 @@
-import React from 'react';
+import React from "react";
 import {
   Card,
   CardBody,
-  CardTitle,
   CardSubtitle,
   CardText,
+  CardTitle,
   Col,
-} from 'reactstrap';
-import Fade from 'react-reveal/Fade';
-import { ExperienceType } from '../types/sections';
+} from "reactstrap";
+import Fade from "react-reveal/Fade";
+import { ExperienceType } from "../types/sections";
 
 const ExperienceCard = ({
   companyLogo,
+  companyUrl,
   company,
   role,
   date,
@@ -26,22 +27,24 @@ const ExperienceCard = ({
           className="shadow-lg--hover mb-3 shadow border-0 text-center rounded"
         >
           <CardBody className="">
-            <img
-              src={companyLogo}
-              style={{
-                objectFit: 'cover',
-                left: 0,
-                right: 0,
-                top: '7rem',
-                marginLeft: 'auto',
-                marginRight: 'auto',
-                width: '8rem',
-                height: '8rem',
-                borderRadius: '50%',
-              }}
-              className="shadow mb-3"
-              alt={companyLogo}
-            />
+            <a href={companyUrl} target="__blank">
+              <img
+                src={companyLogo}
+                style={{
+                  objectFit: "cover",
+                  left: 0,
+                  right: 0,
+                  top: "7rem",
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  width: "8rem",
+                  height: "8rem",
+                  borderRadius: "50%",
+                }}
+                className="shadow mb-3"
+                alt={`${company}-logo`}
+              />
+            </a>
             <CardTitle tag="h4" className="mb-2">
               {company}
             </CardTitle>
@@ -54,8 +57,8 @@ const ExperienceCard = ({
               <ul>
                 {descBullets
                   ? descBullets.map((desc) => {
-                      return <li key={desc}>{desc}</li>;
-                    })
+                    return <li key={desc}>{desc}</li>;
+                  })
                   : null}
               </ul>
             </CardText>
